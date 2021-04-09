@@ -1,0 +1,206 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #314e52;
+  min-height: 100vh;
+  min-width: fit-content;
+}
+
+.outer-container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #f2a154;
+}
+
+.nav-container{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  margin: 0;
+  justify-content: flex-end;
+  right: 0;
+  background-color: #314e52;
+  width: 100%;
+
+}
+
+.nav-list-right {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0.7rem;
+  list-style: none;
+}
+
+.list-item a {
+  text-decoration: none;
+  color: #f2a154;
+}
+
+a.active-link {
+  color: black;
+  font-weight: bold;
+}
+
+.presentation-container{
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.icon {
+  margin: 0 .5rem;
+  color: #f2a154;
+}
+
+@media(max-width: 500px) {
+  .nav-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+  }
+}
+@media(max-width: 768px) {
+  .nav-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: flex-end;
+  }
+}
+
+/* SKILLS SECTION */
+
+.skills-section {
+  padding: 2rem 2rem;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f5db;
+  /* margin: 10px 0; */
+}
+
+.skills-title{
+  font-family:'Ubuntu';
+  font-size:1rem;
+}
+
+.skill-container {
+  width: 70%;
+  margin: auto;
+}
+
+
+.bar-flex{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.bar-fill{
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #314e52;
+  border-radius: 40px;
+  color: #f2a154;
+}
+
+.tag{
+  text-align: center;
+}
+
+/* ABOUT ME SECTION */
+.about-section{
+  display: flex;
+  flex-direction: column;
+  background-color: #314e52;
+  min-height: max-content;
+  margin: 0;
+  width: 100%;
+}
+
+.title{
+  font-family:'Ubuntu';
+  font-size:1rem;
+  margin: 0;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.about-biography{
+  color: #f2a154;
+  font-family: 'Ubuntu';
+  font-size: 1rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 400px;
+  height: 400px;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .avatar {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 1rem 5.5rem;
+    
+  }
+
+  .about-biography{
+    color: #f2a154;
+    font-family: 'Ubuntu';
+    font-size: 1rem;
+    margin: auto;
+    padding: 3rem;
+  }
+  
+}
+
+
+/* CONTACT ME SECTION */
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  background-color: #f4f5db;
+  height: 70vh;
+  margin: 0;
+}
+
+/* Insert left div & right div */
+
+
