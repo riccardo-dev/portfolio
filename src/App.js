@@ -46,9 +46,9 @@ function App() {
           <nav className="nav-container">
               <ul className="nav-list-right">
                 <li className={"list-item"}><a className={currentSection === null ? 'active-link': ''} onClick={() => handleNavClick(null)} href="/">Home</a></li>
-                <li className={"list-item"}><a className={currentSection === 'skills' ? 'active-link': ''} onClick={() => handleNavClick('skills')} href="/#skills">Skills</a></li>
-                <li className={"list-item"}><a className={currentSection === 'about' ? 'active-link': ''} onClick={() => handleNavClick('about')} href="/#about">About Me</a></li>
-                <li className={"list-item"}><a className={currentSection === 'contact' ? 'active-link': ''} onClick={() => handleNavClick('contact')} href="/#contact">Contact Me</a></li>
+                <li className={"list-item"}><a className={currentSection === 'skills' ? 'active-link': ''} onClick={() => handleNavClick('skills')} href="#skills">Skills</a></li>
+                <li className={"list-item"}><a className={currentSection === 'about' ? 'active-link': ''} onClick={() => handleNavClick('about')} href="#about">About Me</a></li>
+                <li className={"list-item"}><a className={currentSection === 'contact' ? 'active-link': ''} onClick={() => handleNavClick('contact')} href="#contact">Contact Me</a></li>
               </ul>
           </nav>
           <div className="presentation-container">
