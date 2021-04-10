@@ -135,7 +135,7 @@ function App() {
               <p data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000"
-                class="about-biography">
+                className="about-biography">
                 Born and raised in Italy. 
                 I'm studying Computer Science at University of Turin. 
                 Currenctly I'm developing on SAP UI5. 
@@ -165,7 +165,7 @@ function App() {
             </div>
           <a data-aos="fade-up" data-aos-duration="2000"
             className="btn-scroll" onClick={() => handleNavClick(null)} href="/" >
-              <FaArrowCircleUp size="2x"/>
+              <FaArrowCircleUp size={28}/>
           </a>
           </div>
         </section>
