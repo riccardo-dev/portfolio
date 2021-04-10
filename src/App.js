@@ -141,7 +141,7 @@ function App() {
                 Born and raised in Italy. 
                 I'm studying Computer Science at University of Turin. 
                 Currenctly I'm developing on SAP UI5. 
-                I'm a Web Developer that likes to keep learning and continue challenging himself. 
+                I'm a Web Developer who likes to keep learning and continue challenging himself. 
                 I work to give the best solution to my clients. 
                 I don't like to define myself by the work I've done. 
                 I define myself by the work I want to do.
