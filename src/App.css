@@ -300,7 +300,6 @@ a.active-link {
     width: 60%;
     margin: 1rem 3rem;
     box-shadow: 10px 10px;
-    border-radius: 100px;
   }
 
   .contact-right{
@@ -308,7 +307,6 @@ a.active-link {
     height: 37vh;
     margin: 1rem 4rem;
     border: 1px solid;
-    border-radius: 40px;
     box-shadow: 10px 10px;
   }
 
