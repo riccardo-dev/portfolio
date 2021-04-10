@@ -165,7 +165,7 @@ function App() {
             </div>
           <a data-aos="fade-up" data-aos-duration="2000"
             className="btn-scroll" onClick={() => handleNavClick(null)} href="/" >
-              <FaArrowCircleUp size={28}/>
+              <FaArrowCircleUp size={42}/>
           </a>
           </div>
         </section>
