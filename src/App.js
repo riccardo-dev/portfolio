@@ -14,6 +14,11 @@ function App() {
 
   const handleNavClick = (sectionId) => {
     switch(sectionId) {
+      case 'home' :
+        homeSection.current.scrollIntoView({
+          behavior: 'smooth'
+        });
+      break;
       case 'skills':
         skillsSection.current.scrollIntoView({
           behavior: 'smooth' 
@@ -30,10 +35,7 @@ function App() {
         });
       break;
       default:
-        homeSection.current.scrollIntoView({
-          behavior: 'smooth' 
-        });
-        break;
+        throw new Error('Page Not Found, Please select e valid Page');
       }
       setCurrentSection(sectionId);
       
@@ -42,10 +44,10 @@ function App() {
   return (
     <div className="App">
         <header className="App-header">
-          <div ref={homeSection} className="outer-container">
+          <div id="home" ref={homeSection} className="outer-container">
           <nav className="nav-container">
               <ul className="nav-list-right">
-                <li className={"list-item"}><a className={currentSection === null ? 'active-link': ''} onClick={() => handleNavClick(null)} href="/">Home</a></li>
+                <li className={"list-item"}><a className={currentSection === 'home' ? 'active-link': ''} onClick={() => handleNavClick('home')} href="#home">Home</a></li>
                 <li className={"list-item"}><a className={currentSection === 'skills' ? 'active-link': ''} onClick={() => handleNavClick('skills')} href="#skills">Skills</a></li>
                 <li className={"list-item"}><a className={currentSection === 'about' ? 'active-link': ''} onClick={() => handleNavClick('about')} href="#about">About Me</a></li>
                 <li className={"list-item"}><a className={currentSection === 'contact' ? 'active-link': ''} onClick={() => handleNavClick('contact')} href="#contact">Contact Me</a></li>
@@ -164,7 +166,7 @@ function App() {
               <p>+39 334 2527780</p>
             </div>
           <a data-aos="fade-up" data-aos-duration="2000"
-            className="btn-scroll" onClick={() => handleNavClick(null)} href="/" >
+            className="btn-scroll" onClick={() => handleNavClick('home')} href="#home" >
               <FaArrowCircleUp size={42}/>
           </a>
           </div>
