@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
 import avatar from './assets/FotoPrimoPiano.png';
-import { FaFacebook, FaGithub, FaInstagram, FaDribbble } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaInstagram, FaDribbble, FaArrowCircleUp } from 'react-icons/fa';
 
 
 function App() {
@@ -70,21 +70,21 @@ function App() {
           </div>
         </header>
         <section id="skills" ref={skillsSection} className="skills-section">
-          <div className="skills-title" data-aos="fade-right">
+          <div className="skills-title" data-aos="fade-right" data-aos-duration="3000">
             <h2>Skills</h2>
           </div>
-          <div className="skill-section" data-aos="fade-left">
+          <div className="skill-section" data-aos="fade-left" data-aos-duration="3000">
           <div className="skill-container" >
               <div className="bar-flex">
-                <div className="bar-fill" style={{width:'80%'}}>
-                  <div className="tag">CSS</div>
+                <div className="bar-fill" style={{width:'85%'}}>
+                  <div className="tag">HTML</div>
                 </div>
-                <span>80%</span>
+                <span>85%</span>
               </div>
 
               <div className="bar-flex">
                 <div className="bar-fill" style={{width:'80%'}}>
-                  <div className="tag">HTML</div>
+                  <div className="tag">CSS</div>
                 </div>
                 <span>80%</span>
               </div>
@@ -97,17 +97,17 @@ function App() {
               </div>
 
               <div className="bar-flex">
-                <div className="bar-fill" style={{width:'70%'}}>
+                <div className="bar-fill" style={{width:'75%'}}>
                   <div className="tag">React</div>
                 </div>
-                <span>70%</span>
+                <span>75%</span>
               </div>
 
               <div className="bar-flex">
-                <div className="bar-fill" style={{width:'70%'}}>
+                <div className="bar-fill" style={{width:'75%'}}>
                   <div className="tag">Angular</div>
                 </div>
-                <span>70%</span>
+                <span>75%</span>
               </div>
 
               <div className="bar-flex">
@@ -130,8 +130,12 @@ function App() {
         <section id="about" ref={aboutSection} >
           <div className="about-section">
             <div className="about-container">
-              <img className="avatar" src={avatar} alt="avatar"></img>
-              <p class="about-biography">
+              <img data-aos="fade-right" data-aos-duration="2000" 
+                className="avatar" src={avatar} alt="avatar" />
+              <p data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+                class="about-biography">
                 Born and raised in Italy. 
                 I'm studying Computer Science at University of Turin. 
                 Currenctly I'm developing on SAP UI5. 
@@ -144,18 +148,29 @@ function App() {
           </div>
         </section>
         <section id="contact" ref={contactSection}>
-          <button className="btn-scroll" onClick={() => handleNavClick(null)}>Scroll To Top</button>
           <div className="contact-section">
-            <div>
-              <h1>Insert somethings</h1>
+            <div className="contact-left" data-aos="fade-down-right" data-aos-duration="2000">
+              <h1>Get In Touch</h1>
+              <p className="contact-right-text">
+                If you have any questions, please feel free to write to me. 
+                I would be thrilled to realize your next project.
+              </p>
             </div>
-            <div className="contact-right">
+            <div className="contact-right" data-aos="fade-down-left" data-aos-duration="2000">
               <h1>Contact Info:</h1>
+              <h2>Email:</h2>
+              <a href="mailto:r.andriadev@gmail.com">r.andriadev@gmail.com</a>
+              <h2>Phone Number:</h2>
+              <p>+39 334 2527780</p>
             </div>
+          <a data-aos="fade-up" data-aos-duration="2000"
+            className="btn-scroll" onClick={() => handleNavClick(null)} href="/" >
+              <FaArrowCircleUp size="2x"/>
+          </a>
           </div>
         </section>
-        <footer style={{backgroundColor: '#314e52'}}>
-          <h1>Footer</h1>
+        <footer className="footer">
+          <p>© 2021 Riccardo Andria. All rights reserved.</p>
         </footer>
     </div>
   );
