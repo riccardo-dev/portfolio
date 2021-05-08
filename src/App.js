@@ -78,31 +78,31 @@ function App() {
           <div className="skill-section" data-aos="fade-left" data-aos-duration="3000">
           <div className="skill-container" >
               <div className="bar-flex">
-                <div className="bar-fill" style={{width:'85%'}}>
+                <div className="bar-fill" style={{width:'90%'}}>
                   <div className="tag">HTML</div>
+                </div>
+                <span>90%</span>
+              </div>
+
+              <div className="bar-flex">
+                <div className="bar-fill" style={{width:'85%'}}>
+                  <div className="tag">CSS</div>
                 </div>
                 <span>85%</span>
               </div>
-
-              <div className="bar-flex">
-                <div className="bar-fill" style={{width:'80%'}}>
-                  <div className="tag">CSS</div>
-                </div>
-                <span>80%</span>
-              </div>
               
               <div className="bar-flex">
-                <div className="bar-fill" style={{width:'80%'}}>
+                <div className="bar-fill" style={{width:'90%'}}>
                   <div className="tag">JavaScript</div>
                 </div>
-                <span>80%</span>
+                <span>90%</span>
               </div>
 
               <div className="bar-flex">
-                <div className="bar-fill" style={{width:'75%'}}>
+                <div className="bar-fill" style={{width:'90%'}}>
                   <div className="tag">React</div>
                 </div>
-                <span>75%</span>
+                <span>90%</span>
               </div>
 
               <div className="bar-flex">
@@ -113,10 +113,10 @@ function App() {
               </div>
 
               <div className="bar-flex">
-                <div className="bar-fill" style={{width:'65%'}}>
+                <div className="bar-fill" style={{width:'80%'}}>
                   <div className="tag">Node.js</div>
                 </div>
-                <span>65%</span>
+                <span>80%</span>
               </div>
 
               <div className="bar-flex">
