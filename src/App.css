@@ -183,9 +183,6 @@ a.active-link {
 
 @media screen and (max-width: 768px) {
 
-  #about{
-    width: fit-content;
-  }
 
   .about-container{
     display: flex;
@@ -261,13 +258,14 @@ a.active-link {
   height:60px;
   bottom: 40px;
   right: 6px;
-  color: black;
+  color: #f2a154;
   text-align:center;
 }
 
 .footer {
   min-height: 10vh;
   background-color: #314e52;
+  color: #f2a154;
 }
 
 .footer p {

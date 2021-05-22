@@ -85,10 +85,10 @@ function App() {
               </div>
 
               <div className="bar-flex">
-                <div className="bar-fill" style={{width:'85%'}}>
+                <div className="bar-fill" style={{width:'90%'}}>
                   <div className="tag">CSS</div>
                 </div>
-                <span>85%</span>
+                <span>90%</span>
               </div>
               
               <div className="bar-flex">
@@ -106,18 +106,19 @@ function App() {
               </div>
 
               <div className="bar-flex">
+                <div className="bar-fill" style={{width:'80%'}}>
+                  <div className="tag">Node.js</div>
+                </div>
+                <span>80%</span>
+              </div>
+
+              <div className="bar-flex">
                 <div className="bar-fill" style={{width:'75%'}}>
                   <div className="tag">Angular</div>
                 </div>
                 <span>75%</span>
               </div>
 
-              <div className="bar-flex">
-                <div className="bar-fill" style={{width:'80%'}}>
-                  <div className="tag">Node.js</div>
-                </div>
-                <span>80%</span>
-              </div>
 
               <div className="bar-flex">
                 <div className="bar-fill" style={{width:'80%'}}>
